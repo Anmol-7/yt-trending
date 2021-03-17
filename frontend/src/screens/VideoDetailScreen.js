@@ -45,18 +45,18 @@ const VideoDetailScreen = ({ match }) => {
             <ListGroupItem>
               <Row className="align-items-center">
                 <Col>
-                  <h4>{videoDetail.title} </h4>
+                  <h2>{videoDetail.title} </h2>
                 </Col>
               </Row>
               <Row className="align-items-center">
-                <Col> {videoDetail.viewCount} views</Col>
-                <Col>
+                <Col style={{fontSize: '15px'}}> {videoDetail.viewCount} views</Col>
+                <Col style={{fontSize: '15px'}}>
                   {videoDetail.likes} likes . {videoDetail.dislikes} dislikes
                 </Col>
               </Row>
               <br />
               <Row className="align-items-center">
-                <Col sm="10">{videoDetail.description}</Col>
+                <Col style={{fontSize: '15px'}} sm="10">{videoDetail.description}</Col>
               </Row>
             </ListGroupItem>
             <ListGroupItem>
@@ -70,13 +70,13 @@ const VideoDetailScreen = ({ match }) => {
                 </Col>
                 <Col xs={4}>
                   <Row>
-                    <h4>{videoDetail.channelTitle}</h4>
+                    <h2>{videoDetail.channelTitle}</h2>
                   </Row>
-                  <Row>{videoDetail.subscribers} subscribers</Row>
+                  <Row style={{fontSize: '14px'}}>{videoDetail.subscribers} subscribers</Row>
                 </Col>
               </Row>
               <Row className="align-items-center">
-              <Col sm="10">{videoDetail.channelDescription}</Col>
+              <Col style={{fontSize: '15px'}} sm="10">{videoDetail.channelDescription}</Col>
               </Row>
             </ListGroupItem>
           </ListGroup>
